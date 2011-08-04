@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Opacity Background Demo</title>
+          <!-- Meta tags -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />  <!-- w3c recomends this meta tag  -->
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />  <!-- w3c recomends this meta tag  -->
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="copyright" content="" />
+	<meta name="author" content="" />
+	<meta name="rating" content="general" />
+	<meta name="robots" content="all" />
+        <!-- Stylesheets -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+	    <!-- Javascripts -->
+    <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="js/pngHack.js"></script>
+    <script language="javascript" type="text/javascript" src="js/opacityBG.js"></script>
+    <script language="javascript" type="text/javascript">
+          
+    		$(document).ready(function(){
+				$(".box:eq(0)").Opacity({
+				    opacity : 0.2
+				});
+				$(".box:eq(1)").Opacity({
+				    opacity : 0.3,
+				    pngFix : true,
+				    pngClass : 'box5'
+				});
+				$(".box:eq(2)").Opacity({
+				    opacity : 0.5
+				});
+				$(".box:eq(3)").Opacity({
+				    opacity : 0.4
+				});
+				$(".box:eq(4)").Opacity({
+				    opacity : 0.7,
+				    pngFix : true,
+				    pngClass : 'box5'
+				});
+
+			});
+
+    </script>
+
+</head>
+
+<body>
+
+      <div id="wrap" style="position:relative;height:500px">
+      
+      	   <div class="box" style=""><h2>box 1</h2></div>
+      	   <div class="box" style="background:url(css/teacup.png) no-repeat;"><h2>box 2</h2></div>
+      	   <div class="box" style="background:url(css/grad2.png) repeat-y;"><h2>box 3</h2></div>
+      	   <div class="box" style="background:url(css/grad3.png) repeat-x"><h2>box 4</h2></div>
+      	   <div class="box" style="background:url(css/teacup.png) 20px 20px no-repeat;"><h2>box 5</h2></div>
+
+      </div>  <!-- end of wrap div -->
+      
+</body>
+</html>
