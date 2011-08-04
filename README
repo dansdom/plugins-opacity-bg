@@ -1,0 +1,10 @@
+Opacity Background plugin
+
+This plugin will allow you to set the opacity of an elements background without it affecting the opacity of the content even in IE6.
+For IE6 it uses the DD_BelatedPNG script, so it needs to be included as well if you are supporting that browser.
+This plugin is for CSS2.1 users who need to support older browsers. Of course if you don't, then you won't need this plugin.
+
+These are the options:
+opacity : number - sets the opacity of the targeted div. range: 0 - 1
+pngFix  : boolean - allows integration with DD_BelatedPNG hack for IE6
+pngClass: string - can set the class of the pngfix so that it doesn't clash with any other png fix classes in the document
